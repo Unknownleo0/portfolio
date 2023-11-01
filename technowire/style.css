@@ -1,0 +1,98 @@
+body{
+    font-family: "Agency FB";
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    width: 500px;
+    height: auto;
+}
+
+.styling {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo logo NavBar"
+        "info info url"
+        "info info url";
+        height: 100vh;
+}
+
+.NavBar {
+    grid-area: NavBar;
+    border-left: 5px solid black;
+}
+
+
+.info {
+    grid-area: info;
+ background-color: aqua;
+}
+
+.url {
+    grid-area: url;
+    border-left: 5px solid black;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: aqua;
+    
+}
+
+.NavBar a {
+    font-size: 30px;
+
+    text-decoration: none;
+    color: #00b6e4;
+}
+
+.NavBar ul {
+    list-style: none;
+}
+
+.NavBar li {
+    border: 3px solid #00b6e4;
+    border-radius: 10PX;
+}
+
+.NavBar ul li a:hover {
+    transition: all ease 0.5s;
+    color: black;
+
+}
+
+.info h1 {
+    text-align: center;
+    background-color: aqua;
+}
+
+.stylehall {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "LOGO2 LOGO2 NavBar"
+      "info2 info2 url2"
+      "info2 info2 url2";
+      height: 100vh;
+  }
+  
+  .NavBar { grid-area: NavBar; }
+  
+  .info2 { grid-area: info2; 
+    text-align: center;
+    background-color: aqua;}
+  
+  .url2 { grid-area: url2; 
+
+    border-left: 5px solid black;}
+  
+  .LOGO2 { grid-area: LOGO2;
+    
+    background-color: aqua; }
+  
